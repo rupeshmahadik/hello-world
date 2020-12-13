@@ -299,7 +299,7 @@ body {
   list-style: none;
   padding: 15px;
   margin: 15px;
-
+  cursor: pointer;
 }
 .input{
   padding: 15px;
@@ -343,12 +343,55 @@ input:focus {
 
 #login_popup {
   list-style: none;
+  visibility: hidden;
+  text-align: center;
+  background-color: #fffffe;
+  height: 300px;
+  width: 300px;
+  position: absolute;
+  top: 50% ;
+  left: 50% ;
+  transform: translate(-50%,-50%);
+}
+#login_close {
+  text-align: right;
+  margin-right: 10px;
+  cursor: pointer;
+}
+#login_close.active {
   visibility: visible;
 }
-
 #login_popup.active {
   visibility: visible ;
 }
+
+#signup_popup {
+  list-style: none;
+  visibility: hidden;
+  text-align: center;
+  background-color: #fffffe;
+  width: 300px;
+  position: absolute;
+  top: 50% ;
+  left: 50% ;
+  transform: translate(-50%,-50%);
+}
+
+#signup_popup.active {
+  visibility: visible ;
+}
+
+#signup_close {
+  text-align: right;
+  margin-right: 10px;
+  cursor: pointer;
+}
+#signup_close.active {
+  visibility: visible;
+}
+
+
+
 
 
 
